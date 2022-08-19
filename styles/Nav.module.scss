@@ -1,0 +1,36 @@
+@import './palette';
+
+.nav{
+    padding: 2rem clamp(2rem, 4vw, 3rem);
+
+    @media screen and (min-width: 600px) {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    span{
+        max-height: 30px;
+        grid-column: 1/2;
+    }
+
+    .nav__list{
+        grid-column: 2/5;
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        padding-left: 0;
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+        .nav__list__item{
+            color: #373A36;
+            text-transform: uppercase;
+            letter-spacing: .025rem;
+            &:hover{
+                color: $grey__medium;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.lottieAnimation{
+    width: 160%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    @media screen and (min-width: 600px) {
+        width: 110%;
+        top: 25%;
+    }
+    @media screen and (min-width: 1000px) {
+        transform: translateX(0);
+        width: auto;
+        height: 150%;
+        left: 40%;
+        right: -10%;
+        top: -25%;
+    }
+}

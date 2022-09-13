@@ -4,10 +4,12 @@
     width: 100%;
     background-color: $accent;
     height: 80vh;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 2rem;
+    
 
     .footer__contacts{
         font-size: clamp(1.2rem, 4vw, 1.4rem);

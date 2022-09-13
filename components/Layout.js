@@ -1,11 +1,13 @@
 import Nav from '../components/Nav'
 import LayoutStyle from '../styles/Layout.module.scss'
+import Footer from './Footer'
 
 const Layout = ({children}) => {
     return(
         <>
-        <Nav></Nav>
-        <main className={LayoutStyle.main}>{children}</main>
+        <Nav/>
+        <main className={`${LayoutStyle.main} main`}>{children}</main>
+        <Footer/>
         </>
     )
 }

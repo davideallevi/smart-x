@@ -4,7 +4,9 @@
     background-color: $grey__extraDark;
     color: white;
     height: 80vh;
+    min-height: 500px;
     align-items: center;
+    overflow: hidden;
 
     @media screen and (max-width: 600px) {
         height: auto;
@@ -12,13 +14,8 @@
         display: flex;
     }
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
-    background-image: url('/vision-illustration.png');
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: contain;
 }

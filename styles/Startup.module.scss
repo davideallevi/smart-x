@@ -1,0 +1,33 @@
+@import './palette';
+
+.startup{
+    color: white;
+    .startup__title{
+        font-size: clamp(4rem, 4vw, 6rem);
+    }
+    .startup__content{
+        margin-top: 1rem;
+        @media screen and (min-width: 600px){
+            display: grid;
+            grid-template-columns: 60% 1fr;
+            gap: 3rem;
+        }
+        .startup__content__description{
+            margin: 1rem 0 0 0;
+        }
+        .startup__content__skills{
+            list-style: none;
+            padding-left: 0;
+            margin: 2rem 0 0 0;
+            @media screen and (min-width: 600px){
+                margin: 0
+            }
+            .startup__content__skills__singleSkill{
+                h6{
+                    margin: 1rem 0 0 0;
+                    color: $accent
+                }
+            }
+        }
+    }
+}

@@ -1,24 +1,24 @@
 import Image from 'next/image'
-import Link from 'next/link'
+//import Link from 'next/link'
 import NavStyle from '../styles/Nav.module.scss'
 
-const Layout = () => {
+const Nav = () => {
     return(
         <nav className={NavStyle.nav}>
             <Image src="/smart-x__logo.svg" alt="Smart X Logo" width={187} height={30} />
             <ul className={NavStyle.nav__list}>
                 <li className={NavStyle.nav__list__item}>
-                    <Link href="#services">lab</Link>
+                    <a href="#lab" prefetch="false">lab</a>
                 </li>
                 <li className={NavStyle.nav__list__item}>
-                    <Link href="#vision">vision</Link>
+                    <a href="#vision" prefetch="false">vision</a>
                 </li>
                 <li className={NavStyle.nav__list__item}>
-                    <Link href="#contacts">contacts</Link>
+                    <a href="#contacts" prefetch="false">contacts</a>
                 </li>
             </ul>
         </nav>
     )
 }
 
-export default Layout
+export default Nav

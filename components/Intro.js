@@ -6,10 +6,12 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 const Intro = () => {
     let titleRef = useRef(null)
     let descriptionRef = useRef(null)
+
     useEffect(() => {
         let titleTl = titleRef.current
         gsap.fromTo(titleTl, {y: 100}, {duration: 1, y: 0})
     }, [])
+    
     useEffect(() => {
         let descriptionTL = descriptionRef.current
         gsap.fromTo(descriptionTL, {y: 100, opacity: 0}, {opacity: 1, duration: 1, delay: .5, y: 0})

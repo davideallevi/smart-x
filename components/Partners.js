@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 const partners = [
     { partner: { id: "1", name: "Visual Ads", src: "/logo-partner__visual-ads.svg", alt: "visual ads, visual-ads, ads-visual", website: "https://www.ads-visual.com/", width: "234", height: "24" } },
     { partner: { id: "2", name: "IMCK Italia", src: "/logo-partner__imck-italia.svg", alt: "imck, imck-italia, imck italia", website: "http://www.imck-italia.it/", width: "181", height: "27" } },
-    { partner: { id: "3", name: "Recon", src: "/logo-partner__recon.svg", alt: "recon, footwear technlogies, recon footwear technologies", website: "https://www.recon-technologies.com/", width: "250", height: "28" } },
+    { partner: { id: "3", name: "XKO", src: "/logo-partner__xko.svg", alt: "xko, xko lab, footwear technlogies, xko footwear technologies, xko lab footwear technologies", website: "https://www.xko-lab.com/", width: "254", height: "43" } },
     { partner: { id: "4", name: "Samar Innovation", src: "/logo-partner__samar-innovation.svg", alt: "samar innovation, innovating for passion", website: "https://www.samarinnovation.it/", width: "400", height: "36" } },
     { partner: { id: "5", name: "GT Talent", src: "/logo-partner__gt-talent.svg", alt: "gt talent, your dream race", website: "https://gttalent.com/", width: "216", height: "53" } },
 ]

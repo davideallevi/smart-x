@@ -1,7 +1,3 @@
-//includes
-@import './_palette';
-@import './_typography';
-
 @mixin selection {
   ::-moz-selection { @content; }
   ::selection { @content; }
@@ -17,13 +13,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
-  @include selection {
-    color: $grey__extraDark;
-    background: $accent;
-  }
 }
 
 @font-face {
@@ -32,11 +22,33 @@ body {
        url('../public/fonts/Chillax-Light.woff') format('woff'),
        url('../public/fonts/Chillax-Light.ttf') format('truetype');
   font-weight: 300;
-  font-display: swap;
-  font-style: normal;
 }
 
-h1{font-family: 'Chillax-Light';}
+@font-face {
+  font-family: 'Chillax-Bold';
+  src: url('../public/fonts/Chillax-Bold.woff2') format('woff2'),
+       url('../public/fonts/Chillax-Bold.woff') format('woff'),
+       url('../public/fonts/Chillax-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Manrope-Light';
+  src: url('../public/fonts/Manrope-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url('../public/fonts/Manrope-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Manrope-Bold';
+  src: url('../public/fonts/Manrope-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
 
 a {
   color: inherit;
@@ -51,3 +63,7 @@ section{width: 100%}
 .fullWidthContainer{padding: clamp(5rem, 4vw, 8rem) clamp(2rem, 4vw, 3rem)}
 
 .intro{height: 70vh; display: flex; flex-direction: column; justify-content: center;}
+
+//includes
+@import './_palette';
+@import './_typography';

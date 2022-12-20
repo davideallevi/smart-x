@@ -40,11 +40,13 @@ const addToBuildSkills = (buildSkillsRefsTL) => {
 
 return(
     <section className={`${BuildStyle.build} fullWidthContainer`}>
-        <h3 className={`${BuildStyle.build__title} title`} ref={addToBuildSkills}>build</h3>
-        <div className={`${BuildStyle.build__content}`}>
-            <p className={`${BuildStyle.build__content__description} lead`} ref={addToBuildSkills}>
+        <div className={`${BuildStyle.build__titles}`}>
+            <h3 className={`${BuildStyle.build__title} title`} ref={addToBuildSkills}>launch</h3>
+            <p className={`${BuildStyle.build__description} lead`} ref={addToBuildSkills}>
                 We develop your brand creating unique meanings around it, connecting your company to the potential audiences through a tangible customer experience, reaching and engaging your prospects.
             </p>
+        </div>
+        <div className={`${BuildStyle.build__content}`}>
             <ul className={`${BuildStyle.build__content__skills}`}>
                 {
                     buildSkills.map(({skill}) => {

@@ -2,25 +2,28 @@
 
 .create{
     color: white;
-    padding-bottom: 0;
-    .create__title{
-        font-size: clamp(4rem, 4vw, 6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
 
-    }
-    .create__content{
-        margin-top: 1rem;
-        @media screen and (min-width: 600px){
-            display: grid;
-            grid-template-columns: 60% 1fr;
-            gap: 3rem;
+    .create__titles{
+        .create__title{
+            font-size: clamp(4rem, 4vw, 6rem);
         }
-        .create__content__description{
+        .create__description{
             margin: 1rem 0 0 0;
         }
+    }
+
+    .create__content{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
         .create__content__skills{
             list-style: none;
             padding-left: 0;
-            margin: 2rem 0 0 0;
             @media screen and (min-width: 600px){
                 margin: 0
             }

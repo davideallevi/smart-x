@@ -19,10 +19,9 @@ export default function Home() {
       </Head>
       <Intro />
       <Video />
-      <div id="lab" style={{backgroundColor: "#98A2A0"}}>
+      <div id="lab" style={{backgroundColor: "#98A2A0", display: "flex"}}>
         <Create />
         <Build />
-        <Startup />
       </div>
       <Partners />
       <Vision />

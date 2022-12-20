@@ -64,6 +64,12 @@ section{width: 100%}
 
 .intro{height: 70vh; display: flex; flex-direction: column; justify-content: center;}
 
+#lab{
+  @media screen and (max-width: 1000px) {
+    flex-direction: column
+  }
+}
+
 //includes
 @import './_palette';
 @import './_typography';

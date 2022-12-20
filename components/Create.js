@@ -40,11 +40,13 @@ const Create = () => {
 
     return(
         <section className={`${CreateStyle.create} fullWidthContainer`}>
-            <h3 className={`${CreateStyle.create__title} title`} ref={addToCreateSkills}>create</h3>
-            <div className={`${CreateStyle.create__content}`}>
-                <p className={`${CreateStyle.create__content__description} lead` } ref={addToCreateSkills}>
+            <div className={`${CreateStyle.create__titles}`}>
+                <h3 className={`${CreateStyle.create__title} title`} ref={addToCreateSkills}>build</h3>
+                <p className={`${CreateStyle.create__description} lead` } ref={addToCreateSkills}>
                     We shape your innovative products, both industrial and digital, implementing the best technical solutions through a multidisciplinary approach.
                 </p>
+            </div>
+            <div className={`${CreateStyle.create__content}`}>
                 <ul className={`${CreateStyle.create__content__skills}`}>
                     {
                         createSkills.map(({skill}) => {

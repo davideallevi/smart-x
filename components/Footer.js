@@ -22,8 +22,8 @@ const Footer = () => {
                     <a href="tel:+390250308452">+39 0250308452</a>
                 </div>
                 <div className={FooterStyle.footer__contacts__social}>
-                    <a href="">Linkedin</a>
-                    <a href="">Instagram</a>
+                    <a href="https://it.linkedin.com/company/smart-x-lab">Linkedin</a>
+                    <a href="https://www.instagram.com/smartx_lab/">Instagram</a>
                 </div>
             </div>
             <div className={`${FooterStyle.copyright} small`}>

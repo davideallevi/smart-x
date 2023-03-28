@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-script-component-in-head */
 import Head from 'next/head'
 import Intro from '../components/Intro'
 import Create from '../components/Create'
@@ -5,8 +6,7 @@ import Vision from '../components/Vision'
 import Partners from '../components/Partners'
 import Video from '../components/Video'
 import Build from '../components/Build'
-import Startup from '../components/Startup'
-
+//import Startup from '../components/Startup'
 export default function Home() {
 
   return (

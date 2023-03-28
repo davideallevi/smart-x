@@ -38,7 +38,7 @@ const Partners = () => {
                         return(
                             <li key={partner.id} className={PartnersStyle.partners__list__singlePartner} ref={addToPartners}>
                                 <a href={partner.website} target="_blank" rel="noopener noreferrer">
-                                    <Image src={partner.src} alt={partner.alt} width={partner.width} height={partner.height} />
+                                    <Image className={PartnersStyle.partners__list__singlePartner__logo} src={partner.src} alt={partner.alt} width={partner.width} height={partner.height} />
                                 </a>
                             </li>
                         )
